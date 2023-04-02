@@ -4,8 +4,9 @@ services:
     build: ./frontend/
     ports:
       - 3000:3000
+    environment:
+      - name=value
   backend:
-  
     build: ./backend/
     ports:
       - 3001:3001
